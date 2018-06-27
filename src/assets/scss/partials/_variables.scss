@@ -1,0 +1,236 @@
+// Colors
+$blue: #2F79BC !default;
+$red: #d85252 !default;
+$yellow: #f2dd86 !default;
+$green: #02b875 !default;
+$cyan: #17a2b8 !default;
+$dark-blue: #42566E;
+$light-blue: #deebf7 !default;
+$gold: #edc624; // Golden Dream
+$gray: #D4D2D2;
+
+$primary: $blue;
+$main: #6A6A6B;
+$secondary: #DCD4CD;
+$head: #6A6A6B;
+
+$cancel: $red;
+$error: $red;
+$success: $green;
+$disabled: #e0e6ed;
+$selected: #F0F7FB;
+
+$size4: 0.25rem;
+$size8: 0.5rem;
+$size10: 0.625rem;
+$size12: 0.75rem;
+$size14: 0.875rem;
+$size16: 1rem;
+$size24: 1.5rem;
+$size32: 2rem;
+$size40: 2.5rem;
+$size48: 3rem;
+$size56: 3.5rem;
+$size64: 4rem;
+$size72: 4.5rem;
+$size80: 5rem;
+$size88: 5.5rem;
+$size96: 6rem;
+$size104: 6.5rem;
+$size112: 7rem;
+$size120: 7.5rem;
+$size128: 8rem;
+$size160: 10rem;
+
+// Texts
+$text-head: $head; // headers, title - Oxford Blue
+$text-main: $main; // primary text, links - Cadet Blue
+$text-sec: $secondary; // secondary text text - Cadet Blue-1
+
+$lines-gray: $gray; // Borders, lines
+$scrollbar-gray: rgba(33, 34, 36, 0.18);
+
+$border-lines-menu: rgba(216, 221, 229, 0.2);
+$border-shadow-dropdown: rgba(0, 0, 0, 0.175);
+$border-lines-dropdown: $lines-gray;
+$border-gray: $gray;
+$border-lines-menu: rgba(216, 221, 229, 0.2);
+$border-shadow-dropdown: rgba(0,0,0,.175);
+
+// Scaffolding
+$body-bg: #fff;
+$text-color: $text-head;
+$body-color: $text-head;
+$link-color: $blue;
+$link-hover-color: $text-main;
+$link-hover-decoration: none;
+
+// Bootstrap
+$icon-font-path: '../fonts/bootstrap/';
+
+// Bootstrap Colors
+$gray-dark: $gray; // body text
+
+// Typography
+$font-family-base: 'Open Sans';
+$font-family-sans-serif: 'Open Sans';
+$font-weight-base: 400;
+$font-weight-normal: 400;
+$font-weight-bold: 700;
+// $font-size-base: 1.4rem;
+// $line-height-base: 1.2;
+$text-color: $text-main;
+$headings-font-weight: 300;
+
+$spacer: 1rem !default;
+$spacers: () !default;
+$spacers: map-merge((
+  0: 0,
+  1: ($spacer * .5),
+  2: $spacer,
+  3: ($spacer * 1.5),
+  4: ($spacer * 2),
+  5: ($spacer * 2.5),
+  6: ($spacer * 3),
+  7: ($spacer * 3.5),
+  8: ($spacer * 4),
+  9: ($spacer * 4.5),
+  10: ($spacer * 5),
+  11: ($spacer * 5.5),
+  12: ($spacer * 6),
+  13: ($spacer * 6.5),
+  14: ($spacer * 7),
+  15: ($spacer * 7.5),
+  16: ($spacer * 8)
+), $spacers);
+
+$grid-gutter-width: 3.2rem;
+
+$h1-font-size: $size48;
+$h2-font-size: $size40;
+$h3-font-size: $size32;
+$h4-font-size: $size24;
+$h5-font-size: $size16;
+$h6-font-size: $size14;
+
+// Navbar
+$navbar-default-bg: #fff;
+$navbar-brand-height: 6rem;
+$navbar-border-radius: 0;
+$navbar-default-border: none;
+$navbar-margin-bottom: 0;
+$navbar-padding-y: $size40;
+$navbar-padding-x: $size64;
+$navbar-brand-height: 4rem;
+$navbar-brand-padding-y: 0;
+
+// Buttons
+$btn-default-color: $text-color;
+$btn-border-radius-small: 0;
+$btn-border-radius-base: 0;
+$btn-border-radius-large: 0;
+
+// Components
+$border-radius-base: 3px;
+
+// Panels
+$panel-default-heading-bg: #fff;
+
+// Grid System
+$grid-gutter-width-base: 32px;
+
+//Scrollbar
+$scroll-color: #dedede;
+
+//seperator label
+$seperator: #ebeef2;
+
+$dropdown-box-shadow: 4px 6px 32px -3px rgba(158,158,158,1) !default;
+
+// Forms
+$form-group-margin-bottom: $size24;
+$input-btn-padding-y: $size8;
+$input-btn-padding-x: $size16;
+$input-color: $text-head;
+$input-focus-color: $text-head;
+$input-border-color: $lines-gray;
+$input-border-radius: 3px;
+$input-placeholder-color: $text-sec;
+$input-focus-border-color: $primary;
+$input-disabled-bg: #fff;
+$input-padding-y: $size4;
+
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1056px
+);
+
+// $input-color: $text-sec;
+
+$theme-colors: (
+    primary: $primary,
+    secondary: $secondary,
+    success: $head,
+    info: $blue,
+    warning: $gold,
+    danger: $red,
+    light: $lines-gray,
+    dark: $gray
+  )
+  !default;
+
+$sidebar-active: $light-blue;
+
+$header-height: $size160;
+
+// Exports
+:export { 
+  blue: $blue;
+  red: $red;
+  yellow: $yellow;
+  green: $green;
+  cyan: $cyan;
+  gold: $gold;
+  primary: $primary;
+  main: $main;
+  secondary: $secondary;
+  head: $head;
+  darkBlue: $dark-blue;
+  gray: $gray;
+  
+  fontFamilyBase: $font-family-base;
+  
+  headerHeight: $header-height;
+  
+  textHead: $head;
+  textMain: $main;
+  textSec: $secondary;
+  textColor: $text-color;
+  
+  disabled: $disabled;
+  selected: $selected;
+  
+  linesGray: $lines-gray;
+  scrollbarGray: $scrollbar-gray;
+
+  borderLinesMenu: $border-lines-menu;
+  borderShadowDropdown: $border-shadow-dropdown;
+
+  borderRadiusBase: $border-radius-base;
+  
+  size4: $size4;
+  size8: $size8;
+  size12: $size12;
+  size14: $size14;
+  size16: $size16;
+  size24: $size24;
+  size32: $size32;
+  size40: $size40;
+  size56: $size56;
+  size64: $size64;
+  size72: $size72;
+  size80: $size80;
+  size128: $size128;
+}

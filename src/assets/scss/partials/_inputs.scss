@@ -1,0 +1,66 @@
+.form-group {
+  @extend .d-flex;
+  @extend .align-items-center;
+
+  &.aligned-top {
+    @extend .align-items-start;
+    > label {
+      padding-top: $size8;
+    }
+  }
+
+  &.error {
+    .form-control-label {
+      color: $red;
+    }
+  }
+
+  &.disabled {
+    .form-control-label {
+      color: $input-border-color;
+    }
+  }
+}
+
+.form-control-label {
+  font-weight: 400;
+  font-size: $size14;
+  @extend .mr-2;
+  min-width: $size64;
+
+  + .input-wrapper,
+  + .form-control {
+    flex: 1;
+  }
+
+  &.disabled {
+    color: $disabled;
+  }
+}
+
+.form-control {
+  @include placeholder($input-placeholder-color, $size12, 1, 400);
+  font-size: $size14;
+  height: 32px;
+  color: $input-color;
+  box-shadow: 0px 0px 0px $input-border-color;
+
+  &:hover {
+    box-shadow: 0px 0px 10px $input-border-color;
+  }
+  &:focus {
+    box-shadow: none;
+  }
+
+  &[disabled] {
+    color: $input-border-color;
+
+    &:hover {
+      box-shadow: none;
+    }
+  }
+}
+
+textarea.form-control {
+  height: auto;
+}

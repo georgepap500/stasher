@@ -1,0 +1,162 @@
+html {
+  width: 100vw;
+  height: 100%;
+}
+
+body {
+  font-size: $size14;
+  line-height: $line-height-base;
+  transition: none;
+  overflow-x: hidden;
+  color: $text-head;
+  
+  @include media-breakpoint-up(md) {
+    font-size: $font-size-base;  
+  }
+}
+
+#root {
+  min-height: 100vh;
+  transition: all 0.3s ease-in-out;
+
+  .content-wrapper {
+    min-height: 100vh;
+    position: relative;
+
+    >.content:first-of-type {
+      min-height: inherit; // padding: $size24;
+      height: 100%;
+    }
+  }
+}
+
+.content,
+.relative {
+  position: relative;
+}
+
+a {
+  text-decoration: none !important;
+  @extend .transition;
+  color: $primary;
+
+  &.navigation-link {
+    color: $primary;
+  }
+
+  &.dark {
+    color: $text-head;
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  color: $text-head;
+  font-family: 'Oswald', "Open Sans Condensed";
+}
+
+.text-wrap {
+  &.text-el {
+    h1,
+    h2,
+    h3,
+    h4,
+    h5 {
+      font-family: "Open Sans Condensed";
+    }
+  }
+
+  &.text-en {
+    h1,
+    h2,
+    h3,
+    h4,
+    h5 {
+      font-family: 'Oswald', "Open Sans Condensed";
+    }
+  }
+}
+
+h1 {
+  font-size: $size24;
+  
+  @include media-breakpoint-up(md) {
+    font-size: $size40;
+  }
+
+  @include media-breakpoint-up(lg) {
+    font-size: $h1-font-size;
+  }
+}
+
+strong,
+b {
+  font-weight: 700 !important;
+}
+
+.transition {
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.full-width {
+  width: 100%;
+}
+
+.height-100 {
+  height: 100vh !important;
+}
+
+.head-text {
+  color: $text-head;
+}
+
+.primary-text {
+  color: $primary;
+}
+
+.main-text {
+  color: $main;
+}
+
+.secondary-text {
+  color: $text-sec;
+}
+
+.light-text {
+  color: $lines-gray;
+}
+
+.ellipsis-text {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.svg-wrapper,
+.svg-wrapper>div {
+  @extend .d-flex;
+  @extend .justify-content-center;
+  @extend .align-items-center;
+  width: 100%;
+  height: 100%;
+}
+
+.semibold {
+  font-weight: 500;
+}
+
+small,
+.small {
+  font-size: $size12
+}
+
+.capitalize {
+  text-transform: capitalize;
+}
