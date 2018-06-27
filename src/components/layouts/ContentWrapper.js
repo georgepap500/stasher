@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import 'assets/scss/main.scss';
+import '../../assets/scss/main.scss';
 
 import { withRouter } from 'react-router-dom';
 

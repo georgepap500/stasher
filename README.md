@@ -4,7 +4,8 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 Run the following compand with API and PORT params 
 
-> API=foogee PORT=3000 npm run start
+> API=pap PORT=3000 npm run start
+npm run start
 
 ## PRODUCTION DEPLOYMENT
 

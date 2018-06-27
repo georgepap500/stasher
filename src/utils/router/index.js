@@ -3,10 +3,10 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { Router, Switch, Route } from 'react-router-dom';
 
-import ContentWrapper from 'components/layouts/ContentWrapper';
+import ContentWrapper from '../../components/layouts/ContentWrapper';
 import RenderRoute from './routes';
-import Home from 'views';
-import NotFound from 'views/NotFound';
+import Home from '../../views';
+import NotFound from '../../views/NotFound';
 
 const mergedRoutes = [];
 

@@ -3,7 +3,7 @@ if [[ $1 == "prod" ]];
 	then
 cat >.env <<EOL
 NODE_PATH=./src
-REACT_APP_API_URL=''
+REACT_APP_API_URL='https://api-staging.stasher.com/v1'
 REACT_APP_ENV='production'
 
 EOL
@@ -13,7 +13,7 @@ elif [[ $1 == "stage" ]];
 	then
 cat >.env <<EOL
 NODE_PATH=./src
-REACT_APP_API_URL=''
+REACT_APP_API_URL='https://api-staging.stasher.com/v1'
 REACT_APP_ENV='stage'
 
 EOL
@@ -23,7 +23,7 @@ elif [[ $1 != "" ]];
 	then
 cat >.env <<EOL
 NODE_PATH=./src
-REACT_APP_API_URL=''
+REACT_APP_API_URL='https://api-staging.stasher.com/v1'
 REACT_APP_ENV='development'
 
 EOL

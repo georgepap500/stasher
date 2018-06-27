@@ -22,7 +22,7 @@
   },
   "scripts": {
     "start-js": "react-scripts start",
-    "start": "NODE_PATH=./src && ./build.sh $API && PORT=$PORT && npm-run-all -p watch-css start-js",
+    "start": "cross-env NODE_PATH=src && build.sh pap && cross-env PORT=3000 && npm-run-all -p watch-css start-js",
     "build-js": "react-scripts build",
     "build": "npm-run-all build-css && node build-js",
     "build-css": "node-sass-chokidar src/assets/scss -o src/assets/css",
@@ -33,6 +33,7 @@
   },
   "devDependencies": {
     "axios-mock-adapter": "^1.15.0",
+    "cross-env": "^5.2.0",
     "jest": "^22.4.4",
     "jest-cli": "^22.4.4",
     "node-sass-chokidar": "^1.3.0",
