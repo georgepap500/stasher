@@ -2,16 +2,12 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## DEVELOPMENT
 
-Run the following compand with API and PORT params 
+Run the following compand (runs at port 3000)
 
-> API=pap PORT=3000 npm run start
+> npm run start
 npm run start
 
 ## PRODUCTION DEPLOYMENT
-
-Stage:
-
-### `ENV=stage npm run predeploy`
 
 Production:
 
