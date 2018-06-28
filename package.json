@@ -6,6 +6,7 @@
     "axios": "^0.18.0",
     "bootstrap": "^4.1.1",
     "formik": "^0.11.11",
+    "hoek": "^5.0.3",
     "moment": "^2.22.1",
     "react": "^16.3.2",
     "react-dom": "^16.3.2",
@@ -23,14 +24,15 @@
   },
   "scripts": {
     "start-js": "react-scripts start",
-    "start": "cross-env NODE_PATH=./src && ./build.sh pap && cross-env PORT=3000 && npm-run-all -p watch-css start-js",
+    "start": "cross-env NODE_PATH=src && build.sh pap && cross-env PORT=3000 && npm-run-all -p watch-css start-js",
     "build-js": "react-scripts build",
     "build": "npm-run-all build-css && node build-js",
     "build-css": "node-sass-chokidar src/assets/scss -o src/assets/css",
     "watch-css": "npm run build-css && node-sass-chokidar src/assets/scss -o src/assets/css --watch --recursive",
-    "predeploy": "./build.sh $ENV && NODE_PATH=./src && npm-run-all build-css build-js && echo $ENV '~~~~~ BUILT ~~~~~'",
+    "predeploy": "./build.sh $ENV && cross-env NODE_PATH=./src && npm-run-all build-css build-js && echo $ENV '~~~~~ BUILT ~~~~~'",
     "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "prodDeploy": "build.sh production && cross-env NODE_PATH=src && npm-run-all build-css build-js && echo production '~~~~~ BUILT ~~~~~'"
   },
   "devDependencies": {
     "axios-mock-adapter": "^1.15.0",
