@@ -23,7 +23,7 @@
   },
   "scripts": {
     "start-js": "react-scripts start",
-    "start": "cross-env NODE_PATH=src && build.sh pap && cross-env PORT=3000 && npm-run-all -p watch-css start-js",
+    "start": "cross-env NODE_PATH=./src && ./build.sh pap && cross-env PORT=3000 && npm-run-all -p watch-css start-js",
     "build-js": "react-scripts build",
     "build": "npm-run-all build-css && node build-js",
     "build-css": "node-sass-chokidar src/assets/scss -o src/assets/css",
