@@ -1,6 +1,6 @@
-import React, { Component } from 'react';
-import '../../assets/scss/main.scss';
+import '../../assets/css/main.css';
 
+import React, { Component } from 'react';
 import { withRouter } from 'react-router-dom';
 
 class ContentWrapper extends Component {

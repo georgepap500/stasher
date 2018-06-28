@@ -7045,3 +7045,32 @@ textarea.form-control {
 
 .modal.modal-preview + .modal-backdrop.show {
   opacity: 0.8; }
+
+.home-wrapper {
+  width: 100vw;
+  height: 100vh; }
+  .home-wrapper .stash-points-wrapper {
+    width: 60%; }
+    .home-wrapper .stash-points-wrapper .stash-point-cards-wrapper .stash-point-card {
+      border: 1px solid #D4D2D2;
+      border-radius: 8px; }
+      .home-wrapper .stash-points-wrapper .stash-point-cards-wrapper .stash-point-card .top-part .left-part .stash-point-photo-small {
+        height: 3.5rem;
+        width: 3.5rem; }
+      .home-wrapper .stash-points-wrapper .stash-point-cards-wrapper .stash-point-card .top-part .right-part .special-open {
+        padding: 4px 8px;
+        border-radius: 1rem;
+        background-color: #D4D2D2;
+        color: #fff; }
+      .home-wrapper .stash-points-wrapper .stash-point-cards-wrapper .stash-point-card .bottom-part {
+        border-top: 1px solid #D4D2D2;
+        min-height: 5.5rem; }
+        .home-wrapper .stash-points-wrapper .stash-point-cards-wrapper .stash-point-card .bottom-part .option {
+          display: none;
+          width: 50%; }
+          .home-wrapper .stash-points-wrapper .stash-point-cards-wrapper .stash-point-card .bottom-part .option:nth-child(2) {
+            border-right: 1px solid #D4D2D2; }
+        .home-wrapper .stash-points-wrapper .stash-point-cards-wrapper .stash-point-card .bottom-part:hover .prices {
+          display: none; }
+        .home-wrapper .stash-points-wrapper .stash-point-cards-wrapper .stash-point-card .bottom-part:hover .option {
+          display: flex; }

@@ -2,7 +2,8 @@ import axios from 'axios';
 import qs from 'qs';
 import MockAdapter from 'axios-mock-adapter';
 
-const API_URL = process.env.API_URL;
+// const API_URL = process.env.API_URL;
+const API_URL = 'https://api-staging.stasher.com/v1';
 let httpMock = null;
 
 if (process.env.NODE_ENV === 'test') {
@@ -56,7 +57,6 @@ export function setupResponseInterceptors(store) {
           case 401:
             switch (error.response.data.error) {
               case 'token_expired':
-                // store.dispatch({ type: TYPES.UNAUTH_USER });
                 break;
               default:
                 break;
@@ -67,7 +67,6 @@ export function setupResponseInterceptors(store) {
             switch (error.response.data.error) {
               case 'token_invalid':
               case 'token_not_provided':
-                // store.dispatch({ type: TYPES.UNAUTH_USER });
                 break;
               default:
                 break;

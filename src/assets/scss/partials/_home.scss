@@ -1,0 +1,61 @@
+.home-wrapper {
+	width: 100vw;
+	height: 100vh;
+
+	.stash-points-wrapper {
+		width: 60%;
+
+		.sort-control-wrapper {
+			
+		}
+
+		.stash-point-cards-wrapper {
+			.stash-point-card {
+				border: 1px solid $gray;
+				border-radius: 8px;
+
+				.top-part {
+					.left-part {
+						.stash-point-photo-small {
+							height: 3.5rem;
+							width: 3.5rem;
+						}
+					}
+
+					.right-part {
+						.special-open {
+							padding: 4px 8px;
+							border-radius: 1rem;
+							background-color: $gray;
+							color: $white;
+						}
+					}
+				}
+				
+				.bottom-part {
+					border-top: 1px solid $gray;
+					min-height: 5.5rem;
+
+					.option {
+						display: none;
+						width: 50%;
+
+						&:nth-child(2) {
+							border-right: 1px solid $gray;
+						}
+					}
+
+					&:hover {
+						.prices {
+							display: none;
+						}
+
+						.option {
+							display: flex;
+						}
+					}
+				}
+			}
+		}
+	}
+}

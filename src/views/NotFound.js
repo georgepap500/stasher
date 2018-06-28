@@ -7,7 +7,7 @@ class NotFound extends Component {
 
   render() {
     return (
-      <div className="home-wrapper d-flex align-items-center justify-content-center">not found</div>
+      <div className="home-wrapper d-flex align-items-center justify-content-center">Error 404 Not Found</div>
     );
   }
 }
