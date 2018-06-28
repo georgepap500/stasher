@@ -5,7 +5,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 Run the following compand (runs at port 3000)
 
 > npm run start
-npm run start
+
 
 ## PRODUCTION DEPLOYMENT
 
